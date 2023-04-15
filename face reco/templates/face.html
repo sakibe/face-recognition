@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Comparison</title>
+</head>
+</head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<style>
+  body {
+    background-image: url({{url_for('static' ,filename='f2.jpg')}})
+  }
+  h1{
+    color: #414042;
+  }
+  h6{
+    color: black;
+  }
+  
+</style>
+
+<body>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div style="text-align: center;">
+    <h1>Face Comparison</h1>
+    <br>
+    <br>
+    <form action="/compare" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" id="file">
+      <br>
+      <br>
+      <br>
+      <input type="submit" value="Compare" class="btn btn-primary">
+    </form>
+  </div>
+  <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+  <h6> * please add images with faces if not can causes error </h6>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
